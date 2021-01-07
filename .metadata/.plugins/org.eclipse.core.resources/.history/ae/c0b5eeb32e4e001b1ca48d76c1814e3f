@@ -1,0 +1,5 @@
+package io.blakehowe.controllers;
+
+public class ProductRestController {
+
+}

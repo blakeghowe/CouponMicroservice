@@ -1,0 +1,7 @@
+package io.blakehowe.repos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CouponRepo extends JpaRepository<T, ID> {
+
+}

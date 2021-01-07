@@ -1,0 +1,5 @@
+package io.blakehowe.model;
+
+public class Coupon {
+
+}
