@@ -2,3 +2,6 @@
 1610212323281	Move compilation unit
 1610212725365	Extract constant 'COUPONSERVICE'
 1610212738015	Rename field 'COUPONSERVICE'
+1610229357552	Delete elements
+1610229779638	Extract constant 'COUPONSERVICE'
+1610229965705	Delete element
