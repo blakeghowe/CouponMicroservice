@@ -24,4 +24,18 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 		.mvcMatchers(HttpMethod.POST, "/couponapi/coupons").hasRole("ADMIN")
 		.anyRequest().denyAll().and().csrf().disable(); // Disable CSRF to use Postman
 	}
+	
+	/* Do not need after using the security.oauth2.resource.jwt.key-uri property instead of storing key in application.properties
+	@Bean
+	public TokenStore tokenStore() {
+		return new JwtTokenStore(jwtAccessTokenConverter());
+	}
+	
+	@Bean
+	public JwtAccessTokenConverter jwtAccessTokenConverter() {
+		JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
+		jwtAccessTokenConverter.setVerifierKey(publicKey);
+		return jwtAccessTokenConverter;
+	}
+	*/
 }
